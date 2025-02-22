@@ -89,7 +89,7 @@ body{
 /* Media query for small screens */
 @media (max-width: 576px) {
   .textxx {
-    font-size: 100px;           /* Reduced font size */
+    font-size: 70px;           /* Reduced font size */
     text-align: center;        /* Center text to improve appearance */
     margin: 5px;               /* Smaller margins */
     word-wrap: break-word;     /* Force text to wrap */
