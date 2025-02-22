@@ -50,12 +50,69 @@ body{
     z-index: 1000;
   }
   
+  .bg-nav{
+    background-color: #826d5a;
+    color: #77583c;
+    border-radius: 25px;
+    opacity: 0.9;
+
+}
+
+.icn{
+    width: 35px;
+}
+
+.textxx{
+    font-size: 200px;
+    color: white;
+    font-weight: bold;
+    /* text-align: center; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.textxxx{
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    /* text-align: center; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ 
 
 
-
+/* Media query for small screens */
 @media (max-width: 576px) {
-    .custom-video {
-      max-width: 100%; /* Ensure it doesn't overflow on small devices */
-    }
+  .textxx {
+    font-size: 100px;           /* Reduced font size */
+    text-align: center;        /* Center text to improve appearance */
+    margin: 5px;               /* Smaller margins */
+    word-wrap: break-word;     /* Force text to wrap */
+    overflow-wrap: break-word; /* Same as above, for broader browser support */
   }
+  
+  .textxxx {
+    font-size: 40px;           /* Reduced font size */
+    text-align: center;        /* Center text */
+    margin: 5px;               /* Smaller margins */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* If needed, adjust container padding to ensure text doesn't touch screen edges */
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .custom-video {
+    max-width: 100%; /* Ensure it doesn't overflow on small devices */
+  }
+}
+
+
   
