@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #77583c;
+    padding-top: 80px; /* Adjust based on your navbar's height */
+
+}
+
+.video-container {
+    margin-top: 2rem;  /* Adds space above the video */
+    margin-bottom: 2rem; /* Adds space below the video */
+  }
+  
+  .custom-video {
+    width: 100%;           /* Full width of its container */
+    max-width: 640px;      /* Maximum width */
+    height: auto;          /* Maintain aspect ratio */
+    border: 3px solid #333; /* Example border */
+    border-radius: 8px;     /* Rounded corners */
+    display: block;         /* Block-level element for centering */
+    margin: 0 auto;         /* Center horizontally */
+  }
+  
+ /* Limit the carousel container to 60% of the viewport height */
+.carousel-wrapper {
+    max-height: 100vh;
+    overflow: hidden;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Force each carousel item to have the same height as the container */
+  .carousel-item {
+    height: 100vh;
+  }
+  
+  /* Ensure carousel images fill their container, using object-fit to crop if needed */
+  .carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid #333; /* Optional: border styling */
+    border-radius: 8px;     /* Optional: rounded corners */
+  }
+  
+  .navbarx {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1000;
+  }
+  
+
+
+
+@media (max-width: 576px) {
+    .custom-video {
+      max-width: 100%; /* Ensure it doesn't overflow on small devices */
+    }
+  }
+  
