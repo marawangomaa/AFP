@@ -1,52 +1,57 @@
-<nav class="navbar navbarx navbar-expand-lg fixed-top bg-nav m-2 navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#home">
-        <img src="../../Africa_icon.png" class="icn" alt="nop"> AFP
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
-              aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto">
-          <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          <a class="nav-link" href="#Introduction">Introduction</a>
-          <a class="nav-link" href="#GSW">GSW</a>
-          <a class="nav-link" href="#FSD">FSD</a>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Jollof
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="nav-link" href="#History">JR History</a></li>
-              <li><a class="nav-link" href="#community">JR Home and community</a></li>
-              <li><a class="nav-link" href="#debate">Jollof digital debate</a></li>
-              <li><a class="nav-link" href="#Recipe">Jollof Recipe</a></li>
-            </ul>
-          </li>
-          <a class="nav-link" href="#opinions">Expert opinions</a>
-          <a class="nav-link" href="#Reference">Reference</a>
-          <a class="nav-link" href="#Conclusion">Conclusion</a>
-          
-        </div>
-      </div>
+<nav class="navbar navbarx navbar-expand-lg navbar-dark">
+  <div class="navcontainer">
+    <a class="navbar-brand" href="#home">
+      <img src="../../Africa_icon.png" class="icn" alt="nop"> <span>AFP</span>
+    </a>
+
+    <hr>
+
+    <!-- Hamburger icon visible on small screens -->
+    <div class="hamburger" (click)="toggleMenu()">&#9776;</div>
+
+    <div class="navbar-nav ms-auto" [class.active]="menuOpen">
+      <a class="nav-link active" aria-current="page" href="#home">Home</a>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#jollofrice">Jollof rice</a>
+      <a class="nav-link" href="#Savoring">Savoring Global Influence</a>
+      <a class="nav-link" href="#Recipe">Recipe</a>
+      <a class="nav-link" href="#Reference">Reference</a>
+      <a class="nav-link" href="#Conclusion">Conclusion</a>
     </div>
-  </nav>
+  </div>
+</nav>
+
+
   
 
 
-  <section data-aos="zoom-in" class="container pt-5 min-vh-100" id="home">
-        <h1 class="textxx">Home</h1>
-        <p class="textxxx">
-          The Jollof Rice debate is a long-standing one
-        </p>
-
-    
-  </section>
+  <div class="home">
+    <section data-aos="zoom-in" class="container pt-5 min-vh-100" id="home">
+      <div class="hometext">
+        <h1 class="textxx">Homepage</h1>
+      <p class="textxxx">
+        Welcome to my final project 
+      </p>
+      </div>
+      <!-- <img class="homeimg" src="../../assets/img/1000410673.png" alt=""> -->
+  
+    </section>
+  </div>
   <section data-aos="zoom-in" class="container pt-5 min-vh-100" id="Introduction">
-    <h1 class="textxx">Introduction</h1>
-    <div class="carousel-wrapper my-4">
+    <div class="row ">
+      <div class="col-md-6 col-sm-12">
+        <h1 class="textxx text-start">Introduction</h1>
+        <p class="introp">
+        Food is more than flavor; it’s a language of power. Food isn’t just eaten; it’s negotiated, weaponized, and celebrated as cultural currency. In West Africa, dishes like Jollof rice tell stories of togetherness, national pride, friendly rivalry, and global ambition. Gastrodiplomacy is how nations wield cuisine to build influence, from embassy dinners where friendship with the host notion and a positive image are sealed over shared meals to viral Twitter wars over whose Jollof reigns supreme. All those constitute a cultural influence or appeal classified as soft power. 
+        </p>
+        <br>
+        <p class="introp">Explore the intersection between  Gastrodiplomacy, West Africa’s cuisine, and Soft power.</p>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <img class="introimg" src="../../assets/img/intro.jpg" alt="intro img">
+      </div>
+    </div>
+    <!-- <div class="carousel-wrapper my-4">
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -68,12 +73,12 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
+    </div> -->
   </section>
   
   
-  <section data-aos="zoom-in" class="container pt-5 min-vh-100" id="GSW">
-    <h1 class="textxx">GSW</h1>
+  <section data-aos="zoom-in" class="container pt-5 min-vh-100" id="jollofrice">
+    <h1 class="textxx">Jollof rice </h1>
     <p class="textxxx">
       The Jollof Rice debate is a long-standing one
     </p>
@@ -85,31 +90,35 @@
     </div>
   </section>
   
-  <section data-aos="zoom-in" class="container pt-5 min-vh-100" id="FSD">
-        <h1 class="textxx">FSD</h1>
+  <section data-aos="zoom-in" class="container pt-5 min-vh-100" id="Savoring">
+        <h1 class="textxx">Savoring Global Influence </h1>
         <p class="textxxx">
           The Jollof Rice debate is a long-standing one
         </p>
 
     
   </section>
-  <section data-aos="zoom-in" class="container pt-5 min-vh-100" id="History">
-        <h1 class="textxx">JR History</h1>
+  <div class="Recipe">
+    <section data-aos="zoom-in" class="container pt-5 min-vh-100" id="Recipe">
+      <div class="recipetext">
+        <h1 class="textxx text-center">Recipe</h1>
+      <p class="textxxx">
+        The Jollof Rice debate is a long-standing one
+      </p>
+      </div>
+
+  
+    </section>
+  </div>
+  <section data-aos="zoom-in" class="container pt-5 min-vh-100" id="Reference">
+        <h1 class="textxx">References</h1>
         <p class="textxxx">
           The Jollof Rice debate is a long-standing one
         </p>
 
     
   </section>
-  <section data-aos="zoom-in" class="container pt-5 min-vh-100" id="community">
-        <h1 class="textxx">JR Home and community</h1>
-        <p class="textxxx">
-          The Jollof Rice debate is a long-standing one
-        </p>
-
-    
-  </section>
-  <section data-aos="zoom-in" class="container pt-5 min-vh-100" id="debate">
+  <!-- <section data-aos="zoom-in" class="container pt-5 min-vh-100" id="debate">
         <h1 class="textxx">Jollof digital debate</h1>
         <p class="textxxx">
           The Jollof Rice debate is a long-standing one
@@ -140,7 +149,7 @@
         </p>
 
     
-  </section>
+  </section> -->
   <section data-aos="zoom-in" class="container pt-5 min-vh-100" id="Conclusion">
         <h1 class="textxx">Conclusion</h1>
         <p class="textxxx">

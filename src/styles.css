@@ -1,8 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-    background-color: #77583c;
-    padding-top: 80px; /* Adjust based on your navbar's height */
 
+@font-face {
+    font-family: "FuturaLT.ttf";
+    src: url('./../src//font/FuturaLT.ttf');
+}
+
+:root{
+  font-family: "FuturaLT";
+}
+
+
+body{
+    background-color: white;
+    color: #77583c;
+
+}
+hr{
+  color: #333;
+  width: 100%;
+}
+
+
+.introimg{
+  width: 500px;
+  padding-top: 40px;
+
+}
+
+.navcontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
 }
 
 .video-container {
@@ -42,40 +71,40 @@ body{
     border-radius: 8px;     /* Optional: rounded corners */
   }
   
-  .navbarx {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: top 0.3s;
-    z-index: 1000;
-  }
-  
-  .bg-nav{
-    background-color: #826d5a;
-    color: #77583c;
-    border-radius: 25px;
-    opacity: 0.9;
+.navbarx{
+  background-color: white;
+  color: #77583c;
+  padding-block: 50px;
+  margin-bottom: 20px;
 
+}
+.navbarx a{
+  color: initial;
+}
+
+.navbarx a:hover{
+  color: #a22f2f;
 }
 
 .icn{
-    width: 35px;
+    width: 50px;
 }
 
+
 .textxx{
-    font-size: 200px;
-    color: white;
+    font-size: 100px;
+    color: #77583c;
     font-weight: bold;
-    /* text-align: center; */
+    text-align: start;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     margin-right: 10px;
 }
 .textxxx{
-    font-size: 60px;
-    color: white;
-    font-weight: bold;
+    font-size: 50px;
+    color: #77583c;
+    font-weight: lighter;
     /* text-align: center; */
     margin-top: 10px;
     margin-bottom: 10px;
@@ -83,34 +112,144 @@ body{
     margin-right: 10px;
 }
 
+
+.introp{
+  /* color: white; */
+  font-size: 25px;
+  padding: 10px;
+}
  
+.home{
+  background-image: url(./assets/img/home.jpg);
+  height: 100vh; /* Full viewport height */
+  background-attachment: fixed; /* Keeps background fixed in place */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hometext{
+  background-color: white;
+  margin: 100px;
+  width: fit-content;
+  margin-inline: auto;
+}
+.recipetext{
+  text-align: center;
+  background-color: white;
+  margin: 100px;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.Recipe {
+  background-image: url(../src/assets/img/r.jpg);
+  height: 100vh; /* Full viewport height */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hamburger {
+  display: none;
+}
 
 
-/* Media query for small screens */
+/* Styles for small screens */
 @media (max-width: 576px) {
   .textxx {
-    font-size: 50px;           /* Reduced font size */
-    text-align: center;        /* Center text to improve appearance */
-    margin: 5px;               /* Smaller margins */
-    word-wrap: break-word;     /* Force text to wrap */
-    overflow-wrap: break-word; /* Same as above, for broader browser support */
-  }
-  
-  .textxxx {
-    font-size: 20px;           /* Reduced font size */
-    text-align: center;        /* Center text */
-    margin: 5px;               /* Smaller margins */
+    font-size: 50px;
+    text-align: center;
+    margin: 5px;
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
   
-  /* If needed, adjust container padding to ensure text doesn't touch screen edges */
+  .textxxx {
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
   .container {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+  
   .custom-video {
-    max-width: 100%; /* Ensure it doesn't overflow on small devices */
+    max-width: 100%;
+  }
+  
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  /* Off-canvas menu for mobile */
+  .navbar-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .navbar-nav.active {
+    transform: translateX(0);
+  }
+}
+
+/* New media query for medium screens */
+@media (min-width: 577px) and (max-width: 992px) {
+  /* Adjust text sizes */
+  .textxx {
+    font-size: 80px;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .textxxx {
+    font-size: 35px;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  /* Adjust container margins/paddings if needed */
+  .navcontainer {
+    padding: 0 20px;
+  }
+  
+  /* Optionally adjust the navbar layout for medium screens if needed */
+  .navbarx {
+    padding-block: 30px;
+  }
+  
+  /* You might want to show a simplified menu or change the layout */
+  .navbar-nav {
+    flex-direction: row;
+    position: static; /* Let it flow normally */
+    transform: none;
+    transition: none;
+  }
+  
+  /* Hide hamburger on medium screens */
+  .hamburger {
+    display: none;
   }
 }
 
