@@ -19,7 +19,10 @@ hr{
   color: #333;
   width: 100%;
 }
-
+a{
+  text-decoration: none;
+  
+}
 
 .introimg{
   width: 500px;
@@ -120,7 +123,7 @@ hr{
 }
  
 .home{
-  background-image: url(./assets/img/home.jpg);
+  background-image: url(./assets/img/home1.jpg);
   height: 100vh; /* Full viewport height */
   background-attachment: fixed; /* Keeps background fixed in place */
   background-position: center;
@@ -187,7 +190,7 @@ hr{
     display: block;
     position: fixed;
     top: 15px;
-    right: 20px;
+    left: 20px;
     font-size: 2rem;
     cursor: pointer;
     z-index: 1001;
@@ -197,7 +200,7 @@ hr{
   .navbar-nav {
     position: fixed;
     top: 0;
-    right: 0;
+    left: -50%;
     height: 100%;
     width: 250px;
     background-color: white;
@@ -211,6 +214,10 @@ hr{
   
   .navbar-nav.active {
     transform: translateX(0);
+  }
+  .home{
+  background-image: url(./assets/img/home2.jpg);
+    
   }
 }
 
@@ -251,6 +258,10 @@ hr{
   .hamburger {
     display: none;
   }
+  .home{
+    background-image: url(./assets/img/home2.jpg);
+      
+    }
 }
 
 
